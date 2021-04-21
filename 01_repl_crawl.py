@@ -70,6 +70,7 @@ class Crawler:
         print(f'completed {len(result)}...')
 
 
+
 #'500038401', '328054674')
 # 상점 id와 상품 id를 넣으면 모든 리뷰를 수집해서 .json으로 저장 해줍니다.
 # 상품의 url을 넣으면 상점id, 상품id 수집하는 기능 추가하면 좋을 것 같네요.

@@ -32,12 +32,11 @@ def save_data(data, target_filename):
 
 
 if __name__ == '__main__':
-    print('hello')
-    dr = pd.date_range(start='20210101', end='20210331')
+    dr = pd.date_range(start='20200401', end='20201231')
     dates = dr.strftime('%Y%m%d').tolist()
     print(dates)
 
-    for date in dates[2:]:
+    for date in dates:
         key = 'Opchl4dUTt5YAAlLu0c%2BsGORkwekJdrfjhlKff2NiYhU%2FaEulm5Wk9fIJH2My7jhE9snVCr83ymkEj%2BLMj99Uw%3D%3D'
         r = call_api(key, date, '1202')
         save_data(r, f'./1202/{date}.json')

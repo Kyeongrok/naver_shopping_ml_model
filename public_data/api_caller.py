@@ -32,7 +32,7 @@ def save_data(data, target_filename):
 
 
 if __name__ == '__main__':
-    dr = pd.date_range(start='20200401', end='20201231')
+    dr = pd.date_range(start='20210401', end='20210429')
     dates = dr.strftime('%Y%m%d').tolist()
     print(dates)
 

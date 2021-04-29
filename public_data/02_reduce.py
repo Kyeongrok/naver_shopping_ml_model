@@ -4,7 +4,7 @@ fl = glob.glob('./1202/'+"*.json")
 
 all = []
 
-print(len(fl))
+print('fl cnt:',len(fl))
 cnt = 0
 for fn in fl:
     with open(fn) as f:
@@ -15,4 +15,4 @@ for fn in fl:
 
 print('cnt:', cnt)
 
-save_data(all, './all.json')
+save_data(all, './auction_price_onion_2020_2021.json')
